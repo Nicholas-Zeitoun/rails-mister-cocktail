@@ -3,7 +3,18 @@
     <div class="card" style="width: auto;">
 
       <div class="card-img-top cocktail-card-image overflow-hidden">
+        <div class="cocktail-image">
         <%= image_tag cocktail[:image_url], :class => "img-fluid" %>
+
+        </div>
+        <div class="cocktail-card-overlay">
+          <h4>Ingredients</h4>
+          <ul>
+            <li>Lime</li>
+            <li>Rmm</li>
+            <li>Burgundy</li>
+          </ul>
+        </div>
       </div>
 
       <div class="card-body">
