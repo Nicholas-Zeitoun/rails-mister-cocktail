@@ -1,12 +1,7 @@
 <h1>Cocktails</h1>
-<ol>
-  <% @cocktails.each do |cocktail| %>
-    <li>
-      <%= link_to cocktail.name, cocktail_path(cocktail) %>
-      <!-- <%= cocktail[:image_url] %> -->
-      <%= image_tag cocktail[:image_url], alt: "alttext" %>
-    </li>
-  <% end %>
-</ol>
+
+<div class="row">
+  <%= render 'shared/cocktail_card' %>
+</div>
 
 <%= link_to "Add New Cocktail", new_cocktail_path%>

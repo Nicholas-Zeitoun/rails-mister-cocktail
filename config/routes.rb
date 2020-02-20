@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   root to: 'cocktails#index'
+  get 'home', to: 'pages#home'
   resources :doses, only: [:destroy]
 
   resources :cocktails do

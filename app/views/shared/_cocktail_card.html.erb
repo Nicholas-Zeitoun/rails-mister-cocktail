@@ -1,0 +1,17 @@
+<% @cocktails.each do |cocktail| %>
+  <div class="col-md-4 mb-4">
+    <div class="card" style="width: auto;">
+
+      <div class="card-img-top cocktail-card-image overflow-hidden">
+        <%= image_tag cocktail[:image_url], :class => "img-fluid" %>
+      </div>
+
+      <div class="card-body">
+        <h5 class="card-title"> <%= cocktail.name %> </h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <!-- <a href="#" class="btn btn-outline-primary">Go somewhere</a> -->
+        <%= link_to 'View Cocktail', cocktail_path(cocktail), :class => "btn btn-outline-primary" %>
+      </div>
+    </div>
+  </div>
+<% end %>
