@@ -30,3 +30,17 @@
     opacity: 0.8;
   }
 }
+
+.ingredients-block {
+  display: flex;
+}
+
+.ingredient-label {
+  margin: 10px;
+  padding: 5px;
+  background-color: #ff7d79;
+  opacity: 1;
+  border-radius: 4px;
+  color: white;
+  text-align: center;
+}

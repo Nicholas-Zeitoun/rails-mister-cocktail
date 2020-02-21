@@ -3,8 +3,6 @@ const initUpdateNavbarOnScroll = () => {
   const navbar = document.querySelector('.navbar-lewagon');
   if (navbar) {
     window.addEventListener('scroll', () => {
-      // console.log(window.scrollY);
-      // console.log(window.innerHeight);
       if (window.scrollY >= 10) {
         navbar.classList.add('navbar-lewagon-white');
       } else {

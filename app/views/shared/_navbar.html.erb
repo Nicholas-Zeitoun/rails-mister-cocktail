@@ -1,7 +1,6 @@
-
 <div class="navbar navbar-expand-sm navbar-light fixed-top navbar-lewagon d-flex justify-content-between">
 
-
+<div class="container">
   <%= link_to root_path, :class => "navbar-brand" do %>
     <%= image_tag asset_path('la-boisson-logo.png') %>
   <% end %>
@@ -13,7 +12,8 @@
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
-        <%= link_to 'Add A Cocktail', new_cocktail_path, :class => "btn btn-primary" %>
+        <%= link_to 'Add A Cocktail', new_cocktail_path, :class => "btn btn-primary text-white" %>
     </ul>
   </div>
+</div>
 </div>

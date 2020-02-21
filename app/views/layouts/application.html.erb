@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>RailsMisterCocktail</title>
+    <title>La Boisson</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
@@ -17,10 +16,13 @@
 
   <body>
     <%= render 'shared/navbar' %>
-    <div class="container mt-5 pt-5">
+    <div class="container mt-5 mb-5 pt-5">
       <%= yield %>
     </div>
-    <%= javascript_include_tag "application" %> <!-- from app/assets/javascripts/application.js -->
-    <%= javascript_pack_tag "application" %>    <!-- from app/javascript/packs/application.js -->
+    <%= render 'shared/footer' %>
+    <%= javascript_include_tag "application" %>
+    <%= javascript_pack_tag "application" %>
   </body>
+
+
 </html>
