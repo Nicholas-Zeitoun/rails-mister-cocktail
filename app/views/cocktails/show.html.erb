@@ -1,3 +1,12 @@
-<h1>Cocktails#show</h1>
-<%= @cocktail.name %>
-<p>Find me in app/views/cocktails/show.html.erb</p>
+<div class="row">
+  <div class="col-lg-6">
+    <%= render 'shared/cocktail_header' %>
+  </div>
+  <div class="col-lg-6">
+    <div class="card shadow-lg">
+      <!-- <img class="card-img" src="..." alt="Card image"> -->
+      <%= image_tag @cocktail[:image_url], :class => "card-img" %>
+
+    </div>
+  </div>
+</div>

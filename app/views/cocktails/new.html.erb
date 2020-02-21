@@ -8,6 +8,7 @@
       <h6 class="card-subtitle mb-2 text-muted">Let's make your cocktail!</h6>
       <%= simple_form_for @cocktail do |f| %>
         <%= f.input :name, placeholder: 'Pickle Rickler...' %>
+        <%= f.input :description, placeholder: 'M-m-m-mnorty I\'m a cocktail morty, I\'m a cocktail biiiiiitch...' %>
         <%= f.input :image_url %>
         <br>
         <%= f.submit class: 'btn btn-outline-info light-btn' %>
