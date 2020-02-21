@@ -20,3 +20,15 @@ import { initUpdateNavbarOnScroll } from '../components/navbar';
 initUpdateNavbarOnScroll();
 
 console.log('Hello World from Webpacker')
+
+import { initSweetalert } from '../plugins/init_sweetalert';
+
+initSweetalert('#sweet-alert-demo', {
+  title: "🍹 Cocktail Has Been Added",
+  text: "Nice work 😊",
+  icon: "success"
+}, (value) => {
+  console.log(value);
+  const link = document.querySelector('#delete-link');
+  link.click();
+});

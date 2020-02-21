@@ -1,11 +1,50 @@
 <h1>Create a new cocktail:</h1>
 
 <div class="col-12">
-  <h5>Select your Ingredients</h5>
-  <div class="row">
-    <% @ingredients.each do |ingredient| %>
-      <button class="btn btn-primary text.white m-2"> <%= ingredient.name %> </button>
+
+  <div class="card mt-4 shadow-lg">
+    <div class="card-body">
+      <h5 class="card-title">Step 1</h5>
+      <h6 class="card-subtitle mb-2 text-muted">Let's make your cocktail!</h6>
+      <%= simple_form_for @cocktail do |f| %>
+        <%= f.input :name, placeholder: 'Pickle Rickler...' %>
+        <%= f.input :image_url %>
+        <br>
+        <%= f.submit class: 'btn btn-outline-info light-btn' %>
+      <% end %>
+    </div>
+  </div>
+
+  <div class="card mt-4">
+    <div class="card-body">
+      <h5 class="card-title">Step 2</h5>
+      <h6 class="card-subtitle mb-2 text-muted">Add some ingredients to mix your cocktail!</h6>
+      <% @ingredients.each do |ingredient| %>
+      <!-- Small modal -->
+      <button type="button" class="btn btn-primary text.white m-2 disabled" data-toggle="modal" data-target=".bd-example-modal-sm"><%= ingredient.name %> +</button>
+
+      <div class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-sm">
+          <div class="modal-content p-3">
+            <h4>Please name your cocktail first! 🤨</h4>
+          </div>
+        </div>
+      </div>
     <% end %>
+    </div>
+  </div>
+  <div class="row mt-4 justify-content-center">
+    <button type="button" class="btn btn-outline-primary m-2 disabled" data-toggle="modal" data-target=".finish-modal-sm">Finish!</button>
+
+    <div class="modal fade finish-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-sm">
+          <div class="modal-content p-3">
+            <h4>Please make your cocktail first! 👆👆</h4>
+          </div>
+        </div>
+      </div>
   </div>
 </div>
-<p>Find me in app/views/cocktails/new.html.erb</p>
+
+
+
