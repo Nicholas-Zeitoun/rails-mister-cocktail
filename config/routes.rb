@@ -3,6 +3,8 @@ Rails.application.routes.draw do
   get 'home', to: 'pages#home'
   resources :doses, only: [:destroy]
 
+  delete "cocktailss/:id", to: "restaurants#destroy"
+
   resources :cocktails do
     resources :doses, only: [:new, :create]
   end
