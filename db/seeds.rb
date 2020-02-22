@@ -7,7 +7,6 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 require 'json'
 require 'open-uri'
-require 'byebug'
 
 puts 'Cleaning database...'
 # Cocktail.destroy_all if Rails.env.development?
@@ -37,7 +36,6 @@ new_cocktails["cocktails"].each do |new_cocktail|
     image_url: new_cocktail['image_url']
   )
   new_cocktail["doses"].each do |dose|
-    # byebug
     Dose.create!(
       description: dose["description"],
       ingredient_id: find_ingredient_id(dose["ingredient_name"]),
