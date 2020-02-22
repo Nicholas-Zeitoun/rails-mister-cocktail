@@ -16,6 +16,11 @@
 // const imagePath = (name) => images(name, true)
 import 'bootstrap';
 
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
+// ..
+AOS.init();
+
 import { initUpdateNavbarOnScroll } from '../components/navbar';
 initUpdateNavbarOnScroll();
 
