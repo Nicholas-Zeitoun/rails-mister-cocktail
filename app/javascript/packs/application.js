@@ -34,11 +34,14 @@ initSweetalert('#sweet-alert-demo', {
 });
 
 initSweetalert('#sweet-alert-delete', {
-  title: "Are you sure you want to delete cocktail?",
+  title: "Are you sure you want to delete this Cocktail?",
   text:"This action cannot be undone 😨",
-  buttons: ["Stop", "Do it!"],
+  dangerMode: true,
+  buttons: true,
   icon: "warning"
 }, (value) => {
-  const link = document.querySelector('#delete-link');
-  link.click();
+  if (value) {
+    const link = document.querySelector('#delete-link');
+    link.click();
+  }
 });
