@@ -2,24 +2,38 @@
 
 This README would normally document whatever steps are necessary to get the
 application up and running.
+---
 
-Things you may want to cover:
+### 🍹 la boisson 🥂
+---
 
-* Ruby version
+##### Version
+ruby '2.6.5'
 
-* System dependencies
-- Using Sweet Alert
-- Using AOS (animate on scroll)
+##### System dependencies
+* Using Sweet Alert
+* Using AOS (animate on scroll)
 
-* Configuration
+#### Configuration
+* Webpack
 
-* Database creation
+#### Database creation
+```
+rails db:reset
+```
 
-* Database initialization
+##### Database initialization
+```
+rails db:seed
+```
+Should generate 9 premade cocktails with populated ingeredients pulling from:
+https://www.thecocktaildb.com/api/json/v1/1/list.php?i=list
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
+##### Test suite
+```
+rake
+```
+---
 
 ### App is live at 👇👇👇
 https://la-boisson.herokuapp.com/
