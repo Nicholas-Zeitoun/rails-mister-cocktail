@@ -9,7 +9,9 @@
         <%= f.input :description, placeholder: '10cl, two drops of...' %>
         <%= f.association :ingredient %>
         <br>
-        <%= f.submit class: 'btn btn-outline-info light-btn' %>
+        <%#= f.submit class: 'btn btn-outline-info light-btn' %>
+        <%= f.button  :submit , name: @page_origin, value: "add", class: 'btn btn-outline-info light-btn'%>
+
       <% end %>
     </div>
   </div>

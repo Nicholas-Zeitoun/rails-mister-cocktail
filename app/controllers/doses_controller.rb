@@ -6,18 +6,25 @@ class DosesController < ApplicationController
     @dose = Dose.new
   end
 
+  def came_from_update_page?
+    params[:update_cocktail]
+  end
+
   def create
-    # raise
     @dose = Dose.new(dose_params)
     @dose.ingredient_id = params[:dose][:ingredient_id]
     @dose.cocktail = @cocktail
-    # @cocktail_ingredients = @cocktail.ingredients.all
 
-    if @dose.save
-      # redirect_to cocktail_path(@cocktail)
-      redirect_to new_cocktail_dose_path(@cocktail)
-    else
-      render :new
+    if came_from_update_page?
+      @dose.save
+      redirect_to edit_cocktail_path(@cocktail)
+    else # will redirect to cocktail dose create page
+      if @dose.save
+        # redirect_to cocktail_path(@cocktail)
+          redirect_to new_cocktail_dose_path(@cocktail)
+      else
+        render :new
+      end
     end
   end
 
