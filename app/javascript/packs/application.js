@@ -29,6 +29,16 @@ initSweetalert('#sweet-alert-demo', {
   icon: "success"
 }, (value) => {
   console.log(value);
+  const link = document.querySelector('#create-link');
+  link.click();
+});
+
+initSweetalert('#sweet-alert-delete', {
+  title: "Are you sure you want to delete cocktail?",
+  text:"This action cannot be undone 😨",
+  buttons: ["Stop", "Do it!"],
+  icon: "warning"
+}, (value) => {
   const link = document.querySelector('#delete-link');
   link.click();
 });
