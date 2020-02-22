@@ -63,5 +63,119 @@
         "ingredient_name": "Lime juice"
       }
     ]
+  },
+  {
+    "name":"Cosmopolitan",
+    "description":"This is a delicious Cosmopolitan cocktail.",
+    "image_url":"https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/an-alcoholic-cosmopolitan-cocktail-is-on-the-bar-royalty-free-image-890771104-1557247368.jpg?crop=0.447xw:1.00xh;0.446xw,0&resize=980:*",
+    "doses":[
+      {
+        "description": "1/2 oz",
+        "ingredient_name": "Lime juice"
+      },
+      {
+        "description": "1/2 oz",
+        "ingredient_name": "Orange bitters"
+      },
+      {
+        "description": "1 oz",
+        "ingredient_name": "Cranberry juice"
+      },
+      {
+        "description": "1 1/2 oz",
+        "ingredient_name": "Lemon vodka"
+      }
+    ]
+  },
+  {
+    "name":"Negroni",
+    "description":"This is a delicious Negroni cocktail.",
+    "image_url":"https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/cocktail-negroni-on-a-old-wooden-board-drink-with-royalty-free-image-922744216-1557251200.jpg?crop=0.447xw:1.00xh;0.434xw,0&resize=980:*",
+    "doses":[
+      {
+        "description": "1 oz",
+        "ingredient_name": "Gin"
+      },
+      {
+        "description": "1 oz",
+        "ingredient_name": "Sweet Vermouth"
+      },
+      {
+        "description": "1 oz",
+        "ingredient_name": "Midori melon liqueur"
+      }
+    ]
+  },
+  {
+    "name":"Moscow Mule",
+    "description":"This is a delicious Moscow Mule cocktail.",
+    "image_url":"https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/gettyimages-834848932-1508962243.jpg?crop=0.9998698425094363xw:1xh;center,top&resize=980:*",
+    "doses":[
+      {
+        "description": "4 oz",
+        "ingredient_name": "Ginger"
+      },
+      {
+        "description": "1/6 oz",
+        "ingredient_name": "Lime juice"
+      },
+      {
+        "description": "1 1/2 oz",
+        "ingredient_name": "Vodka"
+      }
+    ]
+  },
+  {
+    "name":"Whiskey Sour",
+    "description":"This is a delicious Whiskey Sour cocktail.",
+    "image_url":"https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/gettyimages-126551868-1-1508962528.jpg?crop=1.00xw:0.949xh;0,0.0259xh&resize=980:*",
+    "doses":[
+      {
+        "description": "1 oz",
+        "ingredient_name": "Lemon juice"
+      },
+      {
+        "description": "1 dash",
+        "ingredient_name": "Egg yolk"
+      },
+      {
+        "description": "1/2 oz",
+        "ingredient_name": "Sugar syrup"
+      },
+      {
+        "description": "1 1/2 oz",
+        "ingredient_name": "Blended whiskey"
+      }
+    ]
+  },
+  {
+    "name":"Mimosa",
+    "description":"This is a delicious Mimosa cocktail.",
+    "image_url":"https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/homemade-refreshing-orange-mimosa-cocktails-royalty-free-image-538644352-1557251390.jpg?crop=0.447xw:1.00xh;0.111xw,0&resize=980:*",
+    "doses":[
+      {
+        "description": "2 1/2 oz",
+        "ingredient_name": "Orange"
+      },
+      {
+        "description": "2 1/2 oz",
+        "ingredient_name": "Champagne"
+      }
+    ]
+  },
+  {
+    "name":"Martini",
+    "description":"This is a delicious Martini cocktail.",
+    "image_url":"https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/martini-glasses-royalty-free-image-71917252-1557251652.jpg?crop=0.447xw:1.00xh;0.379xw,0&resize=980:*",
+    "doses":[
+      {
+        "description": "1/2 oz",
+        "ingredient_name": "Brandy"
+      },
+      {
+        "description": "3 oz",
+        "ingredient_name": "Gin"
+      }
+    ]
   }
 ]}
