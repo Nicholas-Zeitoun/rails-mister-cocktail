@@ -1,0 +1,67 @@
+{"cocktails":[
+  {
+    "name":"Mojito",
+    "description":"This is a delicious Mojito cocktail.",
+    "image_url":"https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/close-up-of-mojito-on-table-royalty-free-image-998866018-1557246957.jpg?crop=1xw:1xh;center,top&resize=980:*",
+    "doses":[
+      {
+        "description": "250ml",
+        "ingredient_name": "Light rum"
+      },
+      {
+        "description": "250ml",
+        "ingredient_name": "Carbonated water"
+      },
+      {
+        "description": "2 teaspoons",
+        "ingredient_name": "Sugar"
+      },
+      {
+        "description": "1 oz Fresh",
+        "ingredient_name": "Lime juice"
+      }
+    ]
+  },
+  {
+    "name":"Old fashioned",
+    "description":"This is a delicious Old fashioned cocktail.",
+    "image_url":"https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/gettyimages-164770405-1-1508961546.jpg?crop=1xw:1xh;center,top&resize=980:*",
+    "doses":[
+      {
+        "description": "1 1/2 oz",
+        "ingredient_name": "Bourbon"
+      },
+      {
+        "description": "1 cube of",
+        "ingredient_name": "Sugar"
+      },
+      {
+        "description": "2 dashes",
+        "ingredient_name": "Orange bitters"
+      },
+      {
+        "description": "Few dashes plain",
+        "ingredient_name": "Water"
+      }
+    ]
+  },
+  {
+    "name":"Margarita",
+    "description":"This is a delicious Margarita cocktail.",
+    "image_url":"https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/gettyimages-516883622-1508961864.jpg?crop=0.44377777777777777xw:1xh;center,top&resize=980:*",
+    "doses":[
+      {
+        "description": "2 oz",
+        "ingredient_name": "Tequila"
+      },
+      {
+        "description": "1 oz",
+        "ingredient_name": "Orange bitters"
+      },
+      {
+        "description": "1 oz",
+        "ingredient_name": "Lime juice"
+      }
+    ]
+  }
+]}

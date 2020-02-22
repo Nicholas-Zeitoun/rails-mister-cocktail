@@ -8,6 +8,8 @@ Things you may want to cover:
 * Ruby version
 
 * System dependencies
+- Using Sweet Alert
+- Using AOS (animate on scroll)
 
 * Configuration
 
