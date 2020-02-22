@@ -1,13 +1,17 @@
+<!-- Will show custom div if there are no cocktails in the database -->
 <% if @cocktails.empty? %>
+  <!-- Full column with empty message -->
   <div class="col-12 vh-100">
     <h3>No cocktails here... 😭</h3>
     <%= link_to 'Add A Cocktail ', new_cocktail_path %>
   </div>
 <% else %>
+  <!-- Rendering a card for each cocktail -->
   <% @cocktails.each do |cocktail| %>
+    <!-- Card will be contained in a 4 columns on large screens -->
     <div class="col-lg-4 mb-4">
       <div class="card" style="width: auto;">
-
+        <!-- CArd top element containing the image and an overlay -->
         <div class="card-img-top cocktail-card-image overflow-hidden">
           <!-- Image block -->
           <div class="cocktail-image">
@@ -21,11 +25,10 @@
             <% end %>
           </div>
         </div>
-
+        <!-- Card body section containing the cocktail name, description and a button to show cocktail -->
         <div class="card-body">
           <h5 class="card-title"> <%= cocktail.name %> </h5>
           <p class="card-text"> <%= cocktail.description %> </p>
-          <!-- <a href="#" class="btn btn-outline-primary">Go somewhere</a> -->
           <%= link_to 'View Cocktail', cocktail_path(cocktail), :class => "btn btn-outline-primary" %>
         </div>
       </div>

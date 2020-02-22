@@ -1,12 +1,12 @@
 <div class="row">
-  <div class="col-lg-6">
+  <!-- Column containing the _Cocktail_Info_Card_ -->
+  <div class="col-lg-6 mt-4 p-4">
     <%= render 'shared/cocktail_info_card' %>
   </div>
+  <!-- Column containing a card of the cocktail image -->
   <div class="col-lg-6">
     <div class="card shadow-lg">
-      <!-- <img class="card-img" src="..." alt="Card image"> -->
       <%= image_tag @cocktail[:image_url], :class => "card-img" %>
-
     </div>
   </div>
 </div>

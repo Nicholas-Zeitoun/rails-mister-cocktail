@@ -1,26 +1,29 @@
-<div class="cocktail-banner p-4">
-  <h1 class="mt-4"><%= @cocktail.name %></h1>
-  <hr>
-  <div class="card mt-3">
-    <div class="card-body">
-      <div class="card">
+<h1><%= @cocktail.name %></h1>
+<hr>
+<!-- Cocktail details card: 1. Ingredients, 2. description and 3. update links -->
+<div class="card mt-3">
+  <div class="card-body">
+    <!-- Ingredients card -->
+    <div class="card">
       <h5 class="card-header">Ingredients</h5>
-        <div class="card-body">
-          <% @cocktail.doses.each do |dose| %>
-        <div class="ingredient-label "> • <%= dose.description %> <%= dose.ingredient.name %> </div>
-      <% end %>
-        </div>
+      <!-- 1. Iterating through the doses and rendering the ingredients -->
+      <div class="card-body">
+        <% @cocktail.doses.each do |dose| %>
+          <div class="ingredient-label "> • <%= dose.description %> <%= dose.ingredient.name %> </div>
+        <% end %>
       </div>
-      <h5 class="card-title mt-3">Description</h5>
-
-      <p class="card-text"> <%= @cocktail.description %> </p>
-      <span>
-        <i class="far fa-edit" style="color: #ff7d79;"></i> <%= link_to 'Edit', edit_cocktail_path %>
-         | <i class="fas fa-backspace" style="color: #ff7d79;"></i> <%= link_to 'Delete', cocktail_path(@cocktail), method: :delete  %>
-       </span>
     </div>
+    <!-- 2. Cocktail Description -->
+    <h5 class="card-title mt-3">Description</h5>
+    <p class="card-text"> <%= @cocktail.description %> </p>
+    <!-- 3. Links for the updates -->
+    <span>
+      <i class="far fa-edit" style="color: #ff7d79;"></i> <%= link_to 'Edit', edit_cocktail_path %>
+       | <i class="fas fa-backspace" style="color: #ff7d79;"></i> <%= link_to 'Delete', cocktail_path(@cocktail), method: :delete  %>
+    </span>
   </div>
-  <div class="mt-3">
-    <%= link_to "Back to Cocktails", root_path %>
-  </div>
+</div>
+<!-- Link back to the cocktails index -->
+<div class="mt-3">
+  <%= link_to "Back to Cocktails", root_path %>
 </div>

@@ -1,47 +1,20 @@
 <h1>Create a new cocktail:</h1>
-
+<!-- Cocktail crreation forms: 1. Cocktail form, 2. Ingredients form/list, 3. Finish Button  -->
 <div class="col-12">
-
-  <div class="card mt-4 diasabled">
-    <div class="card-body">
-      <h5 class="card-title">Step 1</h5>
-      <h6 class="card-subtitle mb-2 text-muted">Let's make your cocktail!</h6>
-      <%= simple_form_for @cocktail do |f| %>
-        <%= f.input :name, placeholder: 'Pickle Rickler...' %>
-        <%= f.input :image_url %>
-        <br>
-        <%= f.submit class: 'btn btn-outline-info light-btn' %>
-      <% end %>
-    </div>
+  <!-- 1. Rendering the cocktail creation form -->
+  <div class="card mt-4 opacity-30" disabled="diasabled">
+    <%= render 'shared/cocktail_form'%>
   </div>
-
+  <!-- 2. Ingredients form/list -->
   <div class="card mt-4 shadow-lg">
     <div class="card-body">
       <h5 class="card-title">Step 2</h5>
       <h6 class="card-subtitle mb-2 text-muted">Add some ingredients to mix your cocktail!</h6>
-      <% @cocktail.ingredients.each do |ingredient| %>
-      <!-- Small modal -->
-      <div class="btn btn-primary text.white m-2 white-text">• <%= ingredient.name %></div>
-      <% end %>
-
-      <button type="button" class="btn btn-outline-success text.white m-2" data-toggle="modal" data-target=".bd-example-modal-sm">Add Ingredient +</button>
-
-      <div class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-sm">
-          <div class="modal-content p-3">
-            <h4>Add Ingredient</h4>
-            <p>What dosage?</p>
-            <%= simple_form_for [@cocktail, @dose] do |f| %>
-              <%= f.input :description, placeholder: '10cl, two drops of...' %>
-              <%= f.association :ingredient %>
-              <br>
-              <%= f.submit class: 'btn btn-outline-info light-btn' %>
-            <% end %>
-          </div>
-        </div>
-      </div>
+      <%= render 'shared/ingredient_button_list' %>
+      <%= render 'shared/dose_form_modal' %>
     </div>
   </div>
+  <!-- 3. Finish button -->
   <div class="row mt-4 justify-content-center">
     <button id="sweet-alert-demo" class="btn btn-outline-primary">Finish!</button>
     <%= link_to "", cocktail_path(@cocktail), method: :get, id: "delete-link", class: "hidden" %>
