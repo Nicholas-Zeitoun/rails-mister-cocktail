@@ -22,11 +22,18 @@ data = File.read('public/cocktail_seeds.json')
 new_cocktails = JSON.parse(data)
 
 new_cocktails['cocktails'].each do |new_cocktail|
-  created_cocktail = Cocktail.create!(
+  created_cocktail = Cocktail.new(
     name: new_cocktail['name'],
-    description: new_cocktail['description'],
-    image_url: new_cocktail['image_url']
+    description: new_cocktail['description']
+    # image_url: new_cocktail['image_url']
   )
+  file = URI.open(new_cocktail['image_url'])
+  created_cocktail.photo.attach(
+    io: file,
+    filename: "#{new_cocktail['name']}.png",
+    content_type: 'image/png'
+  )
+  created_cocktail.save!
   new_cocktail['doses'].each do |dose|
     Dose.create!(
       description: dose['description'],
