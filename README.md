@@ -12,6 +12,7 @@ Gemfiles:
 
 ##### Configuration
 * Webpack
+* Cloudinary - storage.yml
 
 ##### Database creation
 ```
