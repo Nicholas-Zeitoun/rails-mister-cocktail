@@ -4,7 +4,8 @@
   <%= simple_form_for @cocktail do |f| %>
     <%= f.input :name, placeholder: 'Pickle Rickler...' %>
     <%= f.input :description, placeholder: 'M-m-m-mnorty I\'m a cocktail morty, I\'m a cocktail biiiiiitch...' %>
-    <%= f.input :image_url %>
+    <%#= f.input :image_url %>
+    <%= f.input :photo, as: :file %>
     <br>
     <%= f.submit class: 'btn btn-outline-info light-btn' %>
   <% end %>

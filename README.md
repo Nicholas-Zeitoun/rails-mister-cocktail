@@ -5,8 +5,10 @@
 ruby '2.6.5'
 
 ##### System dependencies
+Webpack:
 * Using Sweet Alert
 * Using AOS (animate on scroll)
+Gemfiles:
 
 ##### Configuration
 * Webpack

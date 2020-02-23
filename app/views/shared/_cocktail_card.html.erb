@@ -15,7 +15,8 @@
         <div class="card-img-top cocktail-card-image overflow-hidden">
           <!-- Image block -->
           <div class="cocktail-image">
-            <%= image_tag cocktail[:image_url], :class => "img-fluid" %>
+            <%#= image_tag cocktail[:image_url], :class => "img-fluid" %>
+            <%= cl_image_tag cocktail.photo.key, height: 500, width: 500, crop: :fill, :class => "img-fluid" %>
           </div>
           <!-- Ingredients overlay -->
           <div class="cocktail-card-overlay">
