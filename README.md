@@ -1,9 +1,3 @@
-# README
-
-This README would normally document whatever steps are necessary to get the
-application up and running.
----
-
 ### 🍹 la boisson 🥂
 ---
 
@@ -11,13 +5,16 @@ application up and running.
 ruby '2.6.5'
 
 ##### System dependencies
+Webpack:
 * Using Sweet Alert
 * Using AOS (animate on scroll)
+Gemfiles:
 
-#### Configuration
+##### Configuration
 * Webpack
+* Cloudinary - storage.yml
 
-#### Database creation
+##### Database creation
 ```
 rails db:reset
 ```

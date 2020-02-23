@@ -6,7 +6,8 @@
   <!-- Column containing a card of the cocktail image -->
   <div class="col-lg-6">
     <div class="card shadow-lg">
-      <%= image_tag @cocktail[:image_url], :class => "card-img" %>
+      <%#= image_tag @cocktail[:image_url], :class => "card-img" %>
+      <%= cl_image_tag @cocktail.photo.key, crop: :fill, :class => "img-fluid" %>
     </div>
   </div>
 </div>
