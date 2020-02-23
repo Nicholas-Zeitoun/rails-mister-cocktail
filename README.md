@@ -1,9 +1,3 @@
-# README
-
-This README would normally document whatever steps are necessary to get the
-application up and running.
----
-
 ### 🍹 la boisson 🥂
 ---
 
@@ -14,10 +8,10 @@ ruby '2.6.5'
 * Using Sweet Alert
 * Using AOS (animate on scroll)
 
-#### Configuration
+##### Configuration
 * Webpack
 
-#### Database creation
+##### Database creation
 ```
 rails db:reset
 ```
